@@ -1,18 +1,23 @@
-import './globals.css'
+import "../global/globals.css";
+import React from "react";
+import { ConfigProvider } from "antd";
+import { childrenType } from "../global/types";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const RootLayout: React.FC<childrenType> = ({ children }) => {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="fa">
       <head />
-      <body>{children}</body>
+      <ConfigProvider
+        theme={{
+          token: {
+            fontFamily: "YekanBakhFaNum",
+            colorLink: "#283040",
+            colorPrimary: "#1E6DFA",
+          },
+        }}
+      >
+        <body className={"px-4 lg:px-16 body-lg"}>{children}</body>
+      </ConfigProvider>
     </html>
-  )
-}
+  );
+};

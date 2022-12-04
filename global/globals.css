@@ -1,0 +1,130 @@
+@import url('../utils/fonts/yekanBakh/fontiran.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: YekanBakhFaNum, serif !important;
+    direction: rtl;
+    color: #283040 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: unset;
+    height: 100%;
+}
+
+@layer components {
+
+    .heading-3xl {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .heading-2xl {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .heading-xl {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .heading-lg {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .heading-md {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .heading-sm {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .sub-md {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .sub-sm {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .body-lg {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .body-sm {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .button-lg {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .button-sm {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .caption-lg {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .caption-sm {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .label {
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
+.ant-dropdown-menu-item {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+}
+
+.ant-drawer-header {
+    padding: 0 16px;
+}
+
+.ant-drawer-content {
+    min-height: 100vh !important;
+}
+
+.ant-carousel .slick-next, .ant-carousel .slick-prev {
+    width: unset !important;
+    height: unset !important;
+    color: #001743 !important;
+    top: 28% !important;
+}
+
+div:has(> img.carousel) {
+    max-width: 9rem !important;
+    margin: auto !important;
+}
